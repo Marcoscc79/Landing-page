@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /* Importación del tipo de letra */
 
 *{
     margin:0;
@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
     width: 100%;
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Tipo de letra traída de Google Fonts */
 }
 
 nav{
@@ -27,13 +27,18 @@ nav a{
     text-decoration: none;
 }
 
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
 .icono{
     display: block;
     z-index: 100000000;
     animation: moverIzquierda 1s ease-in;
 }
 
-header{
+header{ /* Los 3 background fueron importados de https://uigradients.com/ */
     background: #DA4453;  /* Respaldo para navegadores antiguos */
     background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
@@ -45,21 +50,21 @@ header{
 .container{
     width: 95%;
     max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: flex; /* Habilitamos flexbox que se rige a base de posicionamiento*/
+    align-items: center; /* Gracias a flexbox alinea los elementos dentro del contenedor de forma vertical */
+    justify-content: space-around; /* Distribuye los elementos de forma simétrica */
     margin: auto;
 }
 
 img{
     display: block;
     height: 450px;
-    object-fit: cover;
+    object-fit: cover; /* Le da un tamaño proporcional a la imagen */
     animation: arriba 1s ease-in;
 }
 
 .textos{
-    width: 50%;
+    width: 50%; /* Flexbox no deja que se pase del 50% */
     color:#fff;
 }
 
@@ -75,11 +80,11 @@ img{
 }
 
 .textos a{
-    display: inline-block;
+    display: inline-block; /* Para que nos deje darle un padding y un margin */
     color:#fff;
     font-weight: 300;
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 30px; /* Para que se separe de los textos */
     border: 1px solid #fff;
     width: 150px;
     border-radius: 3px;
@@ -112,7 +117,6 @@ img{
     background: #bc4e9c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .uno{
@@ -180,15 +184,10 @@ img{
     font-weight: 500;
 }
 
-button {
-    text-decoration: none;
-}
-
 .btn {
     font-family: inherit;
     font-size: 1rem;
     background-color: #08e08d;
-    color: #fff;
     border: none;
     font-weight: 100;
     padding: .7em 0;
